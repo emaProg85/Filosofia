@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El nacimiento de Eros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+    <div class="contenedor_universal">
+        <div id="bloque_inicial">
+            <!-- Contenedor del icono hamburguesa -->
+            <div class="contenedor" onclick="mostrarMenu()">
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+                    target="_blank">Bibliografía</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div id="título_bloque_inicial">
+                <b>φιλοσοφία</b>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Función para mostrar u ocultar el menú
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.className === "menu") {
+                menu.className += " activo";
+            } else {
+                menu.className = "menu";
+            }
+        }
+    </script>
+    <main>
+    <h1>El mito del andrógino</h1><br><hr><br>
+    <img src="img\aristophanes.jpg" alt="andrógino vasija griega"><br><br>
+    <p>«Tres eran los sexos, no dos. Había un tercer sexo que participaba de ambos y cuyo nombre perdura. El andrógino,
+        en efecto, era una sola cosa que por igual participaba de lo masculino y de lo femenino. Su forma era redonda;
+        su espalda, circular. Tenía cuatro manos, cuatro pies y dos caras, opuestas entre sí. Sobre ambas caras tenía
+        una cabeza sola, además de cuatro orejas, dos sexos, y así lo demás. Como ahora, caminaba derecho, hacia ambos
+        lados, pero al correr lo hacía en círculos sobre sus piernas, que eran ocho. Tres eran los sexos, porque lo
+        masculino venía del sol, lo femenino de la tierra y lo andrógino de la luna, participando de ambos, y
+        precisamente por eso eran circulares. También eran inusitados en cuanto a vigor y fuerza y su orgullo era
+        desmedido, al punto de conspirar contra los dioses. Lo que Homero dice de Esfialtes y de Oto se dice también de
+        ellos, que probaron subir al cielo para agredir a los dioses. Zeus y los demás dioses deliberaron sobre qué
+        hacer con ellos. No podían matarlos, fulminándolos, pues dejarían de recibir honores y sacrificios de los
+        hombres, ni desde luego podían dejar sin castigo su insolencia. Tras un debate, Zeus al fin dijo “Los haré más
+        débiles, de forma que sigan existiendo los hombres y que no quede sin castigar su insolencia. Haré dos mitades
+        de cada uno, para que sean más débiles y más útiles, por ser más. Andarán en dos piernas y, si aún persisten en
+        su insolencia, los cortaré de nuevo en dos mitades, de modo que caminen dando saltos sobre una pierna”. Dicho lo
+        cual cortó a cada uno en dos mitades, como se corta una fruta. Mientras lo hacía, ordenaba a Apolo que curase la
+        herida y que los obligase a volver su cara hacia el corte para que cada hombre, al ver la herida, se ayudase a
+        la modestia. Así, Apolo rejuntó la piel de todas partes hacia el vientre, como bolsas de carne, y las ató en el
+        ombligo, que sirve de advertencia, luego de alisar las demás arrugas y modelar el cuerpo. Una vez hecho dos,
+        cierta nostalgia los juntaba con su vieja mitad y ellos se abrazaban unos a otros, ávidos de una sola
+        naturaleza, y morían de hambre y de inacción, sin hacer nada por separados. Muerta una mitad, la otra buscaba
+        una nueva mitad y se unía a ella, fuera toda mujer o toda hombre. Zeus, no sin compasión, decidió llevar sus
+        sexos al frente, ya que hasta entonces estaban por fuera, hacia los costados, y dejó que engendraran y parieran
+        unos en otros y no en la tierra como insectos. Desde entonces podrían engendrar en ellos, a través de lo
+        masculino en lo femenino, de modo que si se abrazaban hombre con mujer pudiesen perpetuar nuestra especie pero
+        si se abrazaban hombre con hombre sólo ganasen alguna satisfacción con el roce antes de volver a sus trabajos.
+        Desde entonces es común el amor de unos a otros, que procura hacer uno de dos, restaurando su antigua
+        naturaleza. Por tanto, cada uno de nosotros es simplemente un símbolo de hombre, al quedar hecho dos, y
+        precisamente por eso cada uno busca su propio símbolo. En fin, cuantos hombres son parte de aquel andrógino
+        gustan de mujeres, tocando a esta clase los adúlteros, y cuantas mujeres son parte gustan en cambio de hombres.
+        Pero cuantas mujeres son parte de mujer, no gustan de hombres sino de otras mujeres, tocando a esta clase las
+        lesbianas, y si en cambio son parte de varón gustan de varones.» </p>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+/* Estilo del icono hamburguesa */
+.hamburguesa {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/* Estilo del contenedor del icono */
+.contenedor {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Estilo del menú de navegación */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+
+/* Estilo de los elementos del menú */
+.menu a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Estilo de los elementos del menú al pasar el ratón */
+.menu a:hover {
+  background-color: gray;
+}
+
+/* Estilo del menú cuando está activo */
+.activo {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<!-- Contenedor del icono hamburguesa -->
+<div class="contenedor" onclick="mostrarMenu()">
+  <div class="hamburguesa"></div>
+  <div class="hamburguesa"></div>
+  <div class="hamburguesa"></div>
+</div>
+
+<!-- Menú de navegación -->
+<div class="menu" id="menu">
+  <a href="#">Inicio</a>
+  <a href="#">Sobre nosotros</a>
+  <a href="#">Servicios</a>
+  <a href="#">Contacto</a>
+</div>
+
+<script>
+// Función para mostrar u ocultar el menú
+function mostrarMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.className === "menu") {
+    menu.className += " activo";
+  } else {
+    menu.className = "menu";
+  }
+}
+</script>
+</body>
+</html>

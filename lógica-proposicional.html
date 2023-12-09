@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica proposicional</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap"
+    rel="stylesheet">
+
+  <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+  <div class="contenedor_universal">
+    <div id="bloque_inicial">
+      <!-- Contenedor del icono hamburguesa -->
+      <div class="contenedor" onclick="mostrarMenu()">
+        <div class="hamburguesa"></div>
+        <div class="hamburguesa"></div>
+        <div class="hamburguesa"></div>
+      </div>
+
+      <!-- Menú de navegación -->
+      <div class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+          target="_blank">Bibliografía</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div id="título_bloque_inicial">
+        <b>φιλοσοφία</b>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //Función para mostrar u ocultar el menú
+    function mostrarMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.className === "menu") {
+        menu.className += " activo";
+      } else {
+        menu.className = "menu";
+      }
+    }
+  </script>
+
+  <!-- Lo saco porque agregué un "menú hamburguesa" que contiene lo mismo
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing" target="_blank">Cuadernillo completo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav><hr>
+    </header>-->
+
+  <main>
+    <h1>2. Lógica proposicional</h1><br>
+    <hr>
+    <br>
+    <p id="bajada-del-titulo">Del griego antiguo λογική logikḗ, que significa «dotada de razón, intelectual, dialéctica,
+      argumentativa» y que a
+      su vez viene de λόγος (lógos), «palabra, pensamiento, idea, argumento, razón o principio».</p><br>
+    <hr><br>
+    <img src="img\giphy.gif" alt="Cerebro con mono de Homero Simpson."><br><br>
+    <p>La lógica es una disciplina filosófica... Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magnam
+      provident maxime. Possimus maiores obcaecati doloribus. Esse debitis quas consectetur, minus iste repudiandae
+      ipsum. Nobis eligendi voluptatum voluptate dignissimos ut.</p>
+    <p>En esta sección aprenderemos a operar con los siguientes aspectos de la lógica proposicional:</p>
+    <br>
+    <hr>
+    <h2>Contenidos:</h2>
+    <ul>
+      <li>2.1 El problema del conocimiento</li>
+      <li>2.2 Reconocimiento de argumentos</li>
+      <li>2.3 Formalización de propocisiones</li>
+      <li>2.4 Formalización de argumentos</li>
+      <li>2.5 Confección de tablas de verdad</li>
+    </ul>
+    <br>
+    <hr>
+    <h2>2.1 El problema del conocimiento</h2>
+    <p>Antes de comenzar con los contenidos específicos tenemos que aprender algunas cosas. En principio, entender por
+      qué el conocimiento para la filosofía se presenta como un problema. Además, debemos poder distinguirlo
+      de otras prácticas humanas y entender su definición. Para ello deben aprender los conceptos que este <a
+        href="https://drive.google.com/file/d/1jW5l1z6hEumkDs0iAxFlsTZA5rcs6MRw/view?usp=drive_link"
+        target="_blank">texto</a> explica.
+      <br>
+      Por si quieren profundizar en este planteo problemático del conocimiento, puden ver los siguientes videos en
+      YouTube.
+      <br>
+      <br>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=tlTKTTt47WE" target="_blank">¿Es real nuestra realidad? El argumento
+          de la simulación</a></li>
+      <li><a href="https://www.youtube.com/watch?v=RZdfE_7cde0" target="_blank">Is reality real? These neuroscientists
+          don’t think so | Big Think</a></li>
+      <li><a href="https://www.youtube.com/watch?v=xg5y6Ao7VE4&list=PLI9Nn5dVdThoRxGAGCrlIxL1q1CTz4BbP&index=4"
+          target="_blank">How do you know what's true? - Sheila Marie Orfano [poner subs en español]</a></li>
+      <li><a href="https://www.youtube.com/watch?v=ikvrwOnay3g&list=PLI9Nn5dVdThoRxGAGCrlIxL1q1CTz4BbP&index=8"
+          target="_blank">Your brain doesn’t detect reality. It creates it. | Lisa Feldman Barrett</a></li>
+      <li><a href="https://www.youtube.com/watch?v=CMRM_bfCBig" target="_blank">Análisis de "They live" (1988) por
+          Slavoj Zizek</a></li>
+    </ul>
+    </p><br>
+    <hr>
+    <h2>2.2 Reconocimiento de argumentos</h2>
+    <img src="img\img-pensamiento.webp" alt="Dibujo de humano pensando">
+    <div class="pieDePagina">Humano pensando abstracciones.</div><br>
+    <p>Definamos qué es un argumento. Es un conjunto de enunciados o proposiciones en el que alguno o algunos de ellos
+      cumplen el rol de premisas, y otro, el de conclusión. La o las premisas dan razones en favor de la
+      conclusión. Más adelante ahondaremos en esta definición. Por el momento es necesario que nos concentremos en lo
+      siguiente: hablamos de proposiciones o enunciados, pero no de oraciones. ¿Cuál es el motivo? La razón
+      es que oraciones y proposiciones/enunciados no son lo mismo. Pero ¿en qué se diferencian? Para responder estos
+      interrogantes lean el apartiado "Oraciones y enunciados" de este
+      <a href="https://drive.google.com/file/d/18mXhWup5WT_QVtJ7hYIeBKA0bGKcZ8vg/view?usp=drive_link"
+        target="_blank">texto</a> y luego miern este <a
+        href="https://www.youtube.com/watch?v=uvWLe-PFnBs&list=PL71h9nkUDIJec0XuuIPdfXSzJBh1oCPgn&index=4"
+        target="_blank">video</a>.
+    </p>
+    <p>Por otro lado, debemos poder distinguir, una vez que ya entendimos qué es un argumento, sus partes: las premisas
+      y la conclusión. Para ello debemos prestar atención a los roles que cada proposición cumplen dentro del argumento.
+      Las
+      proposiciones que dan apoyo a otra son las premisas. La propocisión que quiere ser probada es la conclusión. Por
+      suerte, hay otra manera que no es infalible pero resulta útil en una primera aproximación a la cuestión.
+      Se trata de los indicadores de premisas y los indicadores de conclusión. Para ello, deben leer el siguiente <a
+        href="https://drive.google.com/file/d/18mXhWup5WT_QVtJ7hYIeBKA0bGKcZ8vg/view?usp=drive_link"
+        target="_blank">texto</a>.
+    <p>Les dejo a continuación un cuadro que contine varios de los indicadores mencionados:</p><br>
+    <div class="tablas">
+      <table>
+        <tr class="cabecera_cuadro">
+          <td>INDICADORES DE PREMISAS</td>
+          <td>INDICADORES DE CONCLUSIÓN</td>
+        </tr>
+        <tr>
+          <td>Puesto que...</td>
+          <td>Por lo tanto...</td>
+        </tr>
+        <tr>
+          <td>Porque...</td>
+          <td>Luego...</td>
+        </tr>
+        <tr>
+          <td>En efecto...</td>
+          <td>Por consiguiente...</td>
+        </tr>
+        <tr>
+          <td>Dado que...</td>
+          <td>Por esta razón...</td>
+        </tr>
+        <tr>
+          <td>La razón es que...</td>
+          <td>Lo cual implica que...</td>
+        </tr>
+        <tr>
+          <td>En vista de que...</td>
+          <td>En conclusión...</td>
+        </tr>
+        <tr>
+          <td>Ya que...</td>
+          <td>En consecuencia...</td>
+        </tr>
+        <tr>
+          <td>Pues...</td>
+          <td>Podemos afirmar...</td>
+        </tr>
+        <tr>
+          <td>Visto que...</td>
+          <td>Se sigue que...</td>
+        </tr>
+        <tr>
+          <td>Siendo que...</td>
+          <td>Lo cual prueba que...</td>
+        </tr>
+        <tr>
+          <td>En virtud de que...</td>
+          <td>En suma...</td>
+        </tr>
+        <tr>
+          <td>En razón de que...</td>
+          <td>Por eso...</td>
+        </tr>
+        <tr>
+          <td>Lo cual obedece a que...</td>
+          <td>Consecuentemente...</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <p>También pueden ver el siguiente <a
+        href="https://www.youtube.com/watch?v=9YAHS8va_8I&list=PL71h9nkUDIJec0XuuIPdfXSzJBh1oCPgn&index=5"
+        target="_blank">video</a> que les resultará útil en este sentido.</p>
+    <p>Por último, en el mismo texto se les enseña a distinguir entre <i>mención</i> y <i>uso</i> de los términos.</p>
+    <br>
+    <hr>
+
+    <h2>2.3 Formalización de proposiciones</h2>
+    <p>En este tema aprenderemos un nuevo lenguaje: el de la lógica porposicional simbólica. Si bien en un principio
+      parece una tarea ardua, con la práctica resulta sencillo. Se vuelve casi una tarea mecánica.</p>
+    <p>Para aprender dicho lenguaje deben leer el siguiente <a
+        href="https://drive.google.com/file/d/1C_HEBMUzNMr7LBp12qrHZLwYSvnD1AfM/view?usp=drive_link"
+        target="_blank">texto</a>. En definitiva, este mismo texto será el que usemos hasta el final de este tema tan
+      importante.</p>
+    <p>Como presentación mínima, deben saber que el lenguaje de la lógica proposicional simbólica compone de al menos
+      las siguientes categorías de símbolos: <br><br>
+    <ul>
+      <li>Símbolos lógicos: →, ↔, Λ, ⋁, <u>⋁</u>, ~... (conectivas)</li>
+      <li>Símbolos no lógicos: p, q, r, s, t... (letras proposicionales)</li>
+      <li>Paréntesis: ( )</li>
+    </ul>
+    <br>
+    <p>A continuación, hay una tabla que despliega todas las <b>conectivas lógicas</b> de la lógica proposicional,
+      incluyendo ejemplos de su uso en el lenguaje natural y los símbolos que se utilizan para representarlas en
+      lenguaje formal.</p><br>
+    <table>
+      <tr class="cabecera_cuadro">
+        <td>Conectiva</td>
+        <td>Expresión en el lenguaje natural</td>
+        <td>Ejemplo</td>
+        <td>Símbolo</td>
+        <td>Símbolo alternativo</td>
+      </tr>
+      <tr>
+        <td>Negación</td>
+        <td>no/ no es cierto que/ es falso que/ im-/ des-</td>
+        <td><b>No</b> está lloviendo.</td>
+        <td>⁓</td>
+        <td>¬</td>
+      </tr>
+      <tr>
+        <td>Conjunción</td>
+        <td>y/ pero/ sin embargo</td>
+        <td>Está lloviendo <b>y</b> está nublado.</td>
+        <td>Λ</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>Disyunción inclusiva</td>
+        <td>o</td>
+        <td>Está lloviendo <b>o</b> está soleado.</td>
+        <td>⋁</td>
+        <td>|</td>
+      </tr>
+      <tr>
+        <td>Disyunción exclusiva</td>
+        <td>o bien... o bien</td>
+        <td><b>O bien</b> está soleado <b>o bien</b> está nublado.</td>
+        <td><u>⋁</u></td>
+        <td>≢≡</td>
+      </tr>
+      <tr>
+        <td>Condicional material</td>
+        <td>si..., entonces.../ si..., ..../ ..., si...</td>
+        <td><b>Si</b> está soleado<b>, entonces</b> es de día.</td>
+        <td>→</td>
+        <td>⊃</td>
+      </tr>
+      <tr>
+        <td>Bicondicional</td>
+        <td>si y solo si/ siempre y cuando</td>
+        <td>Está nublado <b>si y solo si</b> hay nubes visibles.</td>
+        <td>↔</td>
+        <td>≡</td>
+      </tr>
+    </table>
+    <br>
+    <p>Por otro lado, las <b>letras proposicionales</b> representan las <b>proposiciones simples</b> o <b>atómicas</b>.
+      Para dar cuenta de ellas hay que realizar lo que denominamos <b>diccionario</b>.
+      Por ejemplo, para la siguiente proposición compleja, deberíamos realizar el siguiente diccionario:</p><br>
+    <p>Llueve <b>y</b> hace frío.</p><br>
+    <p><u>Diccionario:</u></p><br>
+    <p>p = Llueve</p>
+    <p>q = Hace frío</p><br>
+    <p>Finalmente, si combinamos ambos símbolos de manera correcta (ver bibliografía) el resultado sería la siguiente
+      <b>forma lógica</b>:
+    </p><br>
+    <p>p Λ q</p><br>
+    <hr>
+    <h2>2.5 Confección de tablas de verdad</h2>
+    <p>Las tablas de verdad son una herramienta fundamental en lógica proposicional que se utilizan para determinar la
+      veracidad o falsedad de una proposición compuesta, dadas las veracidades de sus proposiciones componentes.</p>
+    <p>En una tabla de verdad, cada fila representa una posible asignación de valores de verdad (verdadero o falso) a
+      las proposiciones simples que componen la proposición compuesta. La columna final de la tabla muestra el valor de
+      verdad de la proposición compuesta para cada una de estas asignaciones. A continuación veremos las tablas de
+      verdad de cada una de las conectivas de nuestro lenguaje:</p><br>
+
+    <table>
+      <caption>Conjunción (Λ)</caption>
+      <tr>
+        <th>p</th>
+        <th>q</th>
+        <th>p Λ q</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>Disyunción inclusiva (⋁)</caption>
+      <tr>
+        <th>p</th>
+        <th>q</th>
+        <th>p ⋁ q</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>Disyunción exclusiva (<u>⋁</u>)</caption>
+      <tr>
+        <th>p</th>
+        <th>q</th>
+        <th>p <u>⋁</u> q</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>Condicional (→)</caption>
+      <tr>
+        <th>p</th>
+        <th>q</th>
+        <th>p → q</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>Bicondicional (↔)</caption>
+      <tr>
+        <th>p</th>
+        <th>q</th>
+        <th>p ↔ q</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <caption>Negación (⁓)</caption>
+      <tr>
+        <th>p</th>
+        <th>⁓p</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+    <br>
+    <p>En <a href="https://www.erpelstolz.at/gateway/formular-uk-zentral.html" target="_blank">Logic calculator</a>
+      pueden entrar para practicar. Ingresan una fórmula y luego ejecutan para que se les confeccione la tabla de verdad
+      correspondiente. Cabe aclara que el modo en el que lo resuelve no es exactamente el
+      mismo que practiamos en clase. Tengan en cuenta además que carece de un operador lógico o constante que nosotros
+      empleamos que es la "disyunción exclusiva", cuyo símbolo es "<u>V</u>". Sin embargo, les puede resultar útil para
+      corregir la resolución de distintas tablas de verdad con el fin de practicar.
+    </p>
+    <p>Para reforzar lo aprendido en el texto y las clases recomiendo ver, si hace falta, el siguiente video.</p><br>
+    <p><a href="https://www.youtube.com/watch?v=S4uGRH-G_B4" target="_blank">Confección de tablas de verdad</a></p><br>
+
+    <p>¡¡¡Y a practicar incansablemente!!!</p>
+    <br>
+
+    <img src="img\meme logica.jpg" alt="meme de lógica incendio">
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="pieFin">
+      <p>CONTACTO:</p>
+      <p>Currículum del profesor</p>
+      <p>Contacto del profesor</p>
+      <p>Página creada por PROF. EMANUEL FEOLI</p>
+      <hr>
+      <p>©EmanuelFeoli</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

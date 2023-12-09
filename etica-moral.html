@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ética</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+    <div class="contenedor_universal">
+        <div id="bloque_inicial">
+            <!-- Contenedor del icono hamburguesa -->
+            <div class="contenedor" onclick="mostrarMenu()">
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+                    target="_blank">Bibliografía</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div id="título_bloque_inicial">
+                <b>φιλοσοφία</b>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Función para mostrar u ocultar el menú
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.className === "menu") {
+                menu.className += " activo";
+            } else {
+                menu.className = "menu";
+            }
+        }
+    </script>
+
+    <!-- Lo saco porque agregué un "menú hamburguesa" que contiene lo mismo
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing" target="_blank">Cuadernillo completo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav><hr>
+    </header>-->
+
+    <main>
+        <h1>Ética</h1>
+        <hr>
+        <br>
+        <p id="bajada-del-titulo">Del griego antiguo ēthikós (ἠθικός), que significa "relativa al carácter de uno", que a su vez proviene de la
+            palabra raíz êthos (ἦθος) que significa "carácter, naturaleza moral"</p><br><hr><br>
+            <img src="img\angel_demonio.jpeg" alt="Humano con ángel y demonio en los hombros.">
+        <p>En este módulo nos interrogaremos acerca de si se puede saber qué es lo correcto hacer en las distintas
+            circunstancias que se nos pueden presentar en la vida. Para ello estudiaremos
+            las diferentes propuestas de algunos filósofos. <br>La idea es reflexionar sobre nuestras decisiones, las
+            consecuencias de mis acciones y la idea del deber. Conceptos tales como: el bien,
+            lo correcto, el deber, lo conveniente, entre otros serán de suma importancia. Veamos qué nos ofrece la
+            filosofía en relación a esto.
+        </p>
+        <br>
+        <hr>
+        <h2>Contenidos:</h2>
+        <ul>
+            <li>4.1 Dilemas morales</li>
+            <li>4.2 Diferencia entre <i>ética</i> y <i>moral</i></li>
+            <li>4.3 Ética aristotélica</li>
+            <ul>
+                <li>Teoría del término medio</li>
+            </ul>
+            <li>4.4 Ética kantiana</li>
+            <ul>
+                <li>El Imperativo Categórico</li>
+                <li>Interés y deber</li>
+            </ul>
+            <li>4.5 Ética Utilitarista</li>
+            <ul>
+                <li>El Principio de Utilidad</li>
+                <li>Tipos de placeres</li>
+                <li>Alcance ético</li>
+            </ul>
+            <li>4.6 Nietzsche y su crítica radical a toda teoría ética</li>
+            <ul>
+                <li>La Genealogía de la moral</li>
+            </ul>
+        </ul>
+        <br>
+        <hr>
+        <h2>Dilemas morales</h2>
+        <p>Antes de comenzar con la teoría, miremos los siguientes videos y reflexionemos. Sobre todo, la pregunta que
+            es interesante hacer(se) es ¿qué haría en tal situación?
+            ¿Qué debo hacer? ¿Qué es correcto hacer?</p><br>
+        <a href="https://youtu.be/an7bpp0WOYU?si=XRhzZTaLY07SE4Bo" target="_blank">Dilema del tren</a><br>
+        <a href="https://youtu.be/ixIoDYVfKA0?si=8GFFKAAJJghwTKL7" target="_blank">Dilema de los autos
+            auto-tripulados</a><br>
+        <a href="https://youtu.be/9L3KA79mHQs?si=ELl0zXJ6KrufG0QQ" target="_blank">Dilema del tren [optativo]</a><br>
+        <br>
+        <hr>
+        <h2>Diferencia entre <i>ética</i> y <i>moral</i></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt obcaecati nisi facere voluptatibus? Hic
+            asperiores ratione exercitationem rem! Architecto fuga ea amet inventore itaque asperiores odit autem
+            tenetur molestias?</p>
+        <br>
+        <hr>
+        <h2>Ética aristotélica <br>Teoría del término medio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum officia nobis corporis perspiciatis,
+            temporibus molestiae, eius nisi in nam, rem fugit ea impedit unde earum debitis aperiam ut culpa.</p>
+        <br>
+        <hr>
+        <h2>Ética kantiana <br>El Imperativo Categórico</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi facere repudiandae itaque inventore non optio
+            neque praesentium iste, blanditiis maxime sunt, fugiat soluta impedit ullam laborum asperiores alias,
+            nostrum quis.</p>
+        <br>
+        <hr>
+        <h2>Ética Utilitarista <br>El Principio de Utilidad</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident impedit obcaecati soluta odit sit,
+            illum, non magnam illo blanditiis totam ab optio inventore voluptatibus voluptatum architecto fuga tenetur
+            error?</p>
+        <br>
+        <hr>
+        <h2>Nietzsche y su crítica radical a toda teoría ética <br>La Genealogía de la moral</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam aliquam qui ducimus ipsum iste tempora
+            blanditiis molestias cumque magnam itaque beatae repellat, eligendi incidunt ex nobis aspernatur odio quo!
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="pieFin">
+            <p>CONTACTO:</p>
+            <p>Currículum del profesor</p>
+            <p>Contacto del profesor</p>
+            <p>Página creada por PROF. EMANUEL FEOLI</p>
+            <hr>
+            <p>©EmanuelFeoli</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding: 10px;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    text-align: left;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: justify;
+    font-size: large;
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+#bajada-del-titulo {
+    font-size: medium;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    color: whitesmoke;
+    text-align: left;
+    font-style: italic;
+    text-wrap: 1px;
+    font-size: small;
+    padding: 2rem;
+}
+
+.texto_footer{
+    margin: 0.8rem;
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+    border-radius: 3%;
+    width: 500px;
+}
+
+.pieDePagina {
+    font-size: small;
+}
+
+.enlaces-navegador {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+nav {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pieFin {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+    max-width: 750px;
+}
+
+col {
+    border: 3px solid black;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.cabecera_cuadro {
+    background-color: rgb(110, 177, 177);
+    font-weight: bolder;
+}
+
+a:hover {
+    cursor: pointer;
+    filter: invert(0.3);
+}
+
+/* Estilo del icono hamburguesa */
+.hamburguesa {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+/* Estilo del contenedor del icono */
+.contenedor {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* Estilo del menú de navegación */
+.menu {
+    display: none;
+    position: absolute;
+    top: 3.6rem;
+    width: 50%;
+    bottom: 0;
+    z-index: 1;
+    opacity: 95%;
+}
+
+/* Estilo de los elementos del menú */
+.menu a {
+    display: block;
+    text-align: left;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: wheat;
+    font-family: 'MuseoModerno', sans-serif;
+    background-color: rgb(44, 41, 41);
+}
+
+/* Estilo de los elementos del menú al pasar el ratón */
+.menu a:hover {
+    background-color: gray;
+    filter: invert(1);
+    font-style: italic;
+}
+
+/* Estilo del menú cuando está activo */
+.activo {
+    display: block;
+}
+
+/*Aspecto del botón ir hacia arriba*/
+/* CSS */
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: grey;
+    /* Set a background color */
+    color: powderblue;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+#bloque_inicial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 3.6rem;
+    
+}
+
+#título_bloque_inicial{
+    margin: 1rem;
+    font: 1.5em sans-serif;
+}
+
+.contenedor_universal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    background: antiquewhite;
+    z-index: 1;
+    opacity: 90%;
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ética y moral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+    <div class="contenedor_universal">
+        <div id="bloque_inicial">
+            <!-- Contenedor del icono hamburguesa -->
+            <div class="contenedor" onclick="mostrarMenu()">
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+                    target="_blank">Bibliografía</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div id="título_bloque_inicial">
+                <b>φιλοσοφία</b>
+            </div>
+        </div>
+    </div>
+ 
+        <script>
+            //Función para mostrar u ocultar el menú
+                function mostrarMenu() {
+                    var menu = document.getElementById("menu");
+                        if (menu.className === "menu") {
+                        menu.className += " activo";
+                        } else {
+                        menu.className = "menu";
+                        }
+                    }
+        </script>
+    
+     <!-- Lo saco porque agregué un "menú hamburguesa" que contiene lo mismo
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing" target="_blank">Cuadernillo completo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav><hr>
+    </header>-->
+
+    <main>
+        <h1>Contacto</h1>
+        <br>
+        <img src="img\filosofo_atendiendo_llamada.jpeg" alt="Filósofo atendiendo una llamada en un mundo abstracto.">
+        <br><br>
+        <p>¿Tenés alguna pregunta, sugerencia o comentario? Nos encantaría saber qué pensás. Podés contactarnos de la siguiente manera:</p><br>
+        <p>Envianos un correo a <a href="mailto:emanuel.feoli@uba.ar">emanuel.feoli@uba.ar</a></p><br>
+        <p>¡Gracias por visitar nuestro sitio web!</p><br>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="pieFin">
+            <p>CONTACTO:</p>
+            <p>Currículum del profesor</p>
+            <p>Contacto del profesor</p>        
+            <p>Página creada por PROF. EMANUEL FEOLI</p>
+            <hr>
+            <p>©EmanuelFeoli</p>
+        </div>
+    </footer>
+</body>
+</html>

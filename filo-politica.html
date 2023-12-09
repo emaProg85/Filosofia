@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ética y moral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+    <div class="contenedor_universal">
+        <div id="bloque_inicial">
+            <!-- Contenedor del icono hamburguesa -->
+            <div class="contenedor" onclick="mostrarMenu()">
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+                    target="_blank">Bibliografía</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div id="título_bloque_inicial">
+                <b>φιλοσοφία</b>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Función para mostrar u ocultar el menú
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.className === "menu") {
+                menu.className += " activo";
+            } else {
+                menu.className = "menu";
+            }
+        }
+    </script>
+
+    <!-- Lo saco porque agregué un "menú hamburguesa" que contiene lo mismo
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing" target="_blank">Cuadernillo completo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav><hr>
+    </header>-->
+
+    <main>
+        <h1>Filosofía política</h1>
+        <hr>
+        <br>
+        <p id="bajada-del-titulo">Del griego Πολιτικά, 'asuntos de las ciudades'.</p><br>
+        <hr>
+        <p>La filosofía política es la rama de la filosofía que se ocupa de estudiar y reflexionar sobre los temas
+            relacionados con la política, como el poder, el Estado, el gobierno, la libertad, la justicia, los derechos,
+            las leyes, etc. La filosofía política busca responder a preguntas como: ¿Por qué los que somos mayoría
+            obedecemos a la minoría gobernante? ¿Qué es el bien común? ¿Qué forma de
+            gobierno es la mejor? ¿Qué derechos y deberes tienen los ciudadanos? ¿Qué criterios se deben seguir para
+            hacer leyes justas? ¿Qué límites tiene el poder político? ¿Qué valores deben orientar la acción política?
+        </p><br>
+        <img src="img\Leviathan_-_Hobbes'_Leviathan_(1651),_title_page_-_BL.jpg">
+        <div class="pieDePagina">Ilustración del Estado de la portada del "Leviatán" de Hobbes.</div>
+        <br>
+        <hr>
+        <h2>Contenidos:</h2>
+        <ul>
+            <li>5.1 Filosofía política platónica</li>
+            <li>5.2 Filosofía política aristotélica</li>
+            <li>5.3 Filosofía política hobbesiana</li>
+            <li>5.4 Filosofía política rousseauniana</li>
+        </ul>
+        <br><hr>
+        <h2>Filosofía política antigua <br>Platón y Aristóteles</h2>
+        <img src="img\esclavo-1.jpg" alt="mano encadenada">
+        <div class="pieDePagina">Ilustración de mano sujeta por cadenas.</div><br>
+        <h3>Política platónica</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sunt obcaecati nisi facere voluptatibus? Hic
+            asperiores ratione exercitationem rem! Architecto fuga ea amet inventore itaque asperiores odit autem
+            tenetur molestias?</p>
+        <br>
+        <hr>
+        <h3>Política aristotélica</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum officia nobis corporis perspiciatis,
+            temporibus molestiae, eius nisi in nam, rem fugit ea impedit unde earum debitis aperiam ut culpa.</p>
+        <br>
+        <hr>
+        <h2>Filosofía política moderna <br>Hobbes y Rousseau</h2>
+        <img src="img\esclavo.jpeg" alt="mano esclavo cadenas">
+        <div class="pieDePagina">Ilustración de mano sujeta por cadenas.</div><br>
+        <h3>Thomas Hobbes <br>El hombre es el lobo del hombre</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi facere repudiandae itaque inventore non optio
+            neque praesentium iste, blanditiis maxime sunt, fugiat soluta impedit ullam laborum asperiores alias,
+            nostrum quis.</p>
+        <br>
+        <hr>
+        <h3>Jean-Jaques Reousseau <br>El contrato social</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident impedit obcaecati soluta odit sit,
+            illum, non magnam illo blanditiis totam ab optio inventore voluptatibus voluptatum architecto fuga tenetur
+            error?</p>
+
+    </main>
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="pieFin">
+            <p>CONTACTO:</p>
+            <p>Currículum del profesor</p>
+            <p>Contacto del profesor</p>
+            <p>Página creada por PROF. EMANUEL FEOLI</p>
+            <hr>
+            <p>©EmanuelFeoli</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

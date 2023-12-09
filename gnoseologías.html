@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorías del conocimiento (gnoseologías)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=MuseoModerno&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="img\ícono-sitio-web.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
+
+    <div class="contenedor_universal">
+        <div id="bloque_inicial">
+            <!-- Contenedor del icono hamburguesa -->
+            <div class="contenedor" onclick="mostrarMenu()">
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+                <div class="hamburguesa"></div>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="menu" id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing"
+                    target="_blank">Bibliografía</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div id="título_bloque_inicial">
+                <b>φιλοσοφία</b>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Función para mostrar u ocultar el menú
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.className === "menu") {
+                menu.className += " activo";
+            } else {
+                menu.className = "menu";
+            }
+        }
+    </script>
+
+    <!-- Lo saco porque agregué un "menú hamburguesa" que contiene lo mismo
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="https://drive.google.com/file/d/1xQfIFnBmxtdunxhQTUUCP1KD3T5xpNFC/view?usp=sharing" target="_blank">Cuadernillo completo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav><hr>
+    </header>-->
+
+    <main>
+        <h1>Teorías del conocimiento<br>(gnoseologías)</h1>
+        <hr><br>
+        <p id="bajada-del-titulo">Del griego γνωσις, gnōsis, «conocimiento» o «facultad de conocer», y λόγος, logos, «razonamiento» o «discurso»</p><br><hr>
+        <p>La <b>gnoseología</b> es una rama de la filosofía que estudia el <b>conocimiento humano en general</b>, es
+            decir, su
+            posibilidad, su origen, su naturaleza y sus límites. La gnoseología se pregunta cómo podemos conocer la
+            realidad, qué fuentes o medios tenemos para acceder al conocimiento, qué tipos de conocimiento existen y
+            cómo se relacionan entre sí, y qué criterios podemos usar para distinguir el conocimiento verdadero del
+            falso. La gnoseología se ocupa del conocimiento en general, y no de los conocimientos específicos de cada
+            ciencia o disciplina
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h2>Contenidos:</h2>
+        <ul>
+            <li>3.1 Sócrates: metodología y finalidad</li>
+            <ul>
+                <li>Método socrático</li>
+                <li>Finalidad ética</li>
+            </ul>
+            <li>3.2 Platón</li>
+            <ul>
+                <li>Apariencia y realidad: alegría de la caverna</li>
+                <li>Teoría de las Formas o Ideas</li>
+                <li>Teoría de la Reminiscencia</li>
+            </ul>
+            <li>3.3 Aristóteles</li>
+            <ul>
+                <li>Categorías</li>
+            </ul>
+            <li>3.4 René Descartes</li>
+            <ul>
+                <li>Reglas del método</li>
+                <li>Meditaciones Metafísicas</li>
+                <ul>
+                    <li>Duda radical</li>
+                    <li><i>Cogito, ergo sum.</i></li>
+                    <li>Exitencia de Dios</li>
+                </ul>
+            </ul>
+        </ul>
+        <ul>
+            <li>3.5 David Hume</li>
+            <ul>
+                <li>Empirismo</li>
+                <li>Idea de Causalidad</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>3.6 Immanuel Kant</li>
+            <ul>
+                <li>Revolución copernicana</li>
+                <li>Realismo vs. Idealismo</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>3.7 Friedrich Nietzsche</li>
+            <ul>
+                <li>Crítica radical</li>
+                <ul>
+                    <li>La verdad como metáfora olvidada</li>
+                </ul>
+            </ul>
+        </ul>
+        <br>
+        <hr>
+        <h2>3.1 Sócrates</h2>
+        <img src="img\retrato_sócrates.jpeg" alt="Retrato de Sócrates.">
+        <p>La metodología socrática es un método de diálogo y cuestionamiento crítico que busca eliminar las opiniones
+            falsas y llegar a la verdad. Se basa en examinar una hipótesis o una pregunta mediante otras preguntas que
+            evidencian sus problemas lógicos. Su nombre se debe al filósofo griego Sócrates, que lo usaba para hacer
+            reflexionar a sus interlocutores.</p>
+        <br>
+        <hr>
+
+        <h2>3.2 Platón</h2>
+        <img src="img\perfil-platón.png" alt="Retrato Platón">
+        <p>La gnoseología platónica es la teoría del conocimiento que desarrolló el filósofo griego Platón. Según esta
+            teoría, el conocimiento verdadero solo se puede alcanzar mediante la razón, que nos permite acceder al mundo
+            de las ideas, que son las esencias o formas de la realidad. El conocimiento sensible, basado en los
+            sentidos, solo nos ofrece una opinión engañosa y cambiante de las cosas materiales, que son imitaciones
+            imperfectas de las ideas. La gnoseología platónica se expone en varios diálogos, como el Teeteto, el
+            Sofista, la República y el Fedón.
+        </p><br>
+        <a href="https://youtu.be/h3UJWsIfwsg?si=1N2e9xX9-MnXCtNd" target="_blank">Alegoría de la caverna</a><br>
+        <br>
+        <hr>
+
+        <h2>3.3 Aristóteles</h2>
+        <img src="img\perfil-aristotles.jpg" alt="Perfil derecho de Aristóteles">
+        <p>Las categorías aristotélicas son diez formas de clasificar las cosas según su naturaleza y sus propiedades.
+            Aristóteles, un filósofo griego, las expuso en su obra Categorías, que forma parte de su lógica. Las
+            categorías son: sustancia, cantidad, cualidad, relación, lugar, tiempo, posición, estado, acción y pasión.
+            Cada una de ellas se refiere a un aspecto diferente de la realidad que podemos observar y expresar mediante
+            el lenguaje.</p>
+        <br>
+        <hr>
+
+        <h2>3.4 René Descartes</h2>
+        <img src="img\descartes-rene-4eeaa8-640.jpg" alt="3/4 perfil izquierdo de René Descartes">
+        <p>Las meditaciones metafísicas de Descartes son seis reflexiones sobre la naturaleza del conocimiento, la
+            existencia de Dios y la relación entre el alma y el cuerpo. Descartes usa la duda metódica como método para
+            eliminar todo lo que no sea seguro y llegar a la primera verdad: “pienso, luego existo”. A partir de ahí,
+            intenta demostrar la existencia de Dios mediante argumentos racionales. Descartes busca así fundar una
+            filosofía racionalista que supere el escepticismo y el dogmatismo</p>
+        <br>
+        <hr>
+
+        <h2>3.5 David Hume</h2>
+        <img src="img\davd-hume.jpg" alt="3/4 erfil derecho de Hume">
+        <p>David Hume fue un filósofo escocés que defendió el empirismo, la doctrina según la cual todo conocimiento
+            proviene de la experiencia sensible. Hume criticó la noción tradicional de causalidad, que suponía una
+            conexión necesaria entre la causa y el efecto, y afirmó que lo único que podemos observar es la sucesión
+            regular de los fenómenos, sin poder inferir ninguna relación de necesidad. Para Hume, la idea de causalidad
+            se basa en el hábito y la costumbre, y no en la razón o la evidencia.
+        </p>
+        <br>
+        <hr>
+
+        <h2>3.6 Immanuel Kant</h2>
+        <img src="img\kant-immanuel.jpg" alt="Perfil de Kant">
+        <p>El idealismo kantiano es la teoría del conocimiento que propuso el filósofo alemán Immanuel Kant en el siglo
+            XVIII. Según esta teoría, el conocimiento humano depende de dos elementos: el objeto (lo dado) y el sujeto
+            (lo puesto). El objeto es lo que nos ofrece la experiencia sensible, pero el sujeto es el que le da forma y
+            sentido mediante sus facultades de sensibilidad, entendimiento y razón. El sujeto pone las condiciones del
+            conocimiento, como el espacio, el tiempo y las categorías, que no son propiedades de la realidad, sino
+            formas de nuestra mente. Por eso, solo podemos conocer los fenómenos, que son las representaciones de las
+            cosas, y no los nóumenos, que son las cosas en sí mismas, incognoscibles para nosotros. El idealismo
+            kantiano busca establecer los límites y las posibilidades de la razón humana, y se expone en su obra
+            principal, la <i>Crítica de la razón pura</i>.</p>
+        <br>
+        <hr>
+
+        <h2>3.7 Friedrich Nietzsche</h2>
+        <img src="img\foto-perfil-nietzsche.jpg" alt="Perfil de Nietzsche">
+        <p> El concepto de verdad como metáfora que plantea Nietzsche en <i>Sobre verdad y mentira en sentido extramoral</i>
+            es una crítica al lenguaje y al conocimiento humano, que considera ilusorios y arbitrarios. Según Nietzsche,
+            el hombre inventa las palabras y las verdades para adaptarse a la realidad y a la sociedad, pero estas no
+            reflejan la esencia de las cosas, sino que son meras convenciones y ficciones. El hombre se engaña a sí
+            mismo creyendo que puede acceder a la verdad mediante la razón y la ciencia, pero en realidad solo crea
+            metáforas que se desgastan y se olvidan de su origen. La verdad, para Nietzsche, no es más que una metáfora
+            que se ha vuelto obligatoria y canónica.</p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="pieFin">
+            <p class="texto_footer">CONTACTO:</p>
+            <p class="texto_footer">Currículum del profesor</p>
+            <p class="texto_footer">Contacto del profesor</p>
+            <p class="texto_footer">Página creada por PROF. EMANUEL FEOLI</p>
+            <hr>
+            <p class="texto_footer">©EmanuelFeoli</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
